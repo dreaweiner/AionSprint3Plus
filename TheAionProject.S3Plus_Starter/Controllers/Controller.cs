@@ -379,6 +379,14 @@ namespace TheAionProject
                         {
                             travelerObject.SpaceTimeLocationId = -1;
                         }
+
+                        //
+                        // remove life if poisoned
+                        //
+                        if (travelerObject.IsDeadly)
+                        {
+                            _gameTraveler.Lives -= 1;
+                        }
                         break;
                     case TravelerObjectType.Weapon:
                         break;

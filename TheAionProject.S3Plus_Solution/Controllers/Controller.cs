@@ -98,7 +98,6 @@ namespace TheAionProject
                         if (travelerObject.IsConsumable)
                         {
                             travelerObject.SpaceTimeLocationId = -1;
-                            
                         }
                         break;
                     case TravelerObjectType.Weapon:
@@ -106,6 +105,12 @@ namespace TheAionProject
                     case TravelerObjectType.Treasure:
                         break;
                     case TravelerObjectType.Information:
+                        break;
+                    case TravelerObjectType.Key:
+                        foreach (var stl in _gameUniverse.SpaceTimeLocations)
+                        {
+                            stl.Accessible = true;
+                        }
                         break;
                     default:
                         break;
@@ -383,6 +388,7 @@ namespace TheAionProject
                 // update experience points for visiting locations
                 //
                 _gameTraveler.ExperiencePoints += _currentLocation.ExperiencePoints;
+                
             }
         }
 

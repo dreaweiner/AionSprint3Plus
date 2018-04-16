@@ -98,6 +98,18 @@ namespace TheAionProject
                 IsVisible = true
             },
 
+            new TravelerObject
+            {
+                Id =10,
+                Name = "Key",
+                SpaceTimeLocationId = 2,
+                Description =
+                    "Use this key to get into the 4th room.",
+                Type = TravelerObjectType.Key,
+                Value = 0
+                
+            },
+
             new SpaceTimeLocationObject
             {
                 Id = 5,

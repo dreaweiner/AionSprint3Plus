@@ -83,6 +83,21 @@ namespace TheAionProject
 
             new TravelerObject
             {
+                Id = 12,
+                Name = "Murphy's Poison",
+                SpaceTimeLocationId = 1,
+                Description = "This is a mysterious potion. Properties are unknown.",
+                PickUpMessage = "This is poisonous. You lose a life.",
+                Type = TravelerObjectType.Medicine,
+                Value = -1,
+                CanInventory = true,
+                IsConsumable = true,
+                IsVisible = true,
+                IsDeadly = true,
+            },
+
+            new TravelerObject
+            {
                 Id = 11,
                 Name = "Trickster's Paradise",
                 SpaceTimeLocationId = 2,
